@@ -1,0 +1,31 @@
+/* Navbar Customizations */
+.navbar {
+    background-color: #232f3e;
+    color: #fff;
+  }
+  
+  .navbar .navbar-brand {
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f0c14b;
+  }
+  
+  /* Sidebar Customizations */
+  .offcanvas-body {
+    background-color: #f4f4f4;
+  }
+  
+  .offcanvas .list-group-item {
+    cursor: pointer;
+  }
+  
+  .offcanvas .list-group-item:hover {
+    background-color: #f0c14b;
+    color: #232f3e;
+  }

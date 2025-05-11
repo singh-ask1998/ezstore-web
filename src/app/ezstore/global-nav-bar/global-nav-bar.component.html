@@ -1,0 +1,101 @@
+<div>
+  <div>
+    <div class="d-flex">
+      <div>Amazon.in</div>
+      <div>Delivering to Pune</div>
+      <div>
+        
+        <form class="d-flex" role="search">
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item"><a href="#">Electronics</a></li>
+              <li class="dropdown-item"><a href="#">Books</a></li>
+              <li class="dropdown-item"><a href="#">Fashion</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="dropdown-item"><a href="#">Home & Kitchen</a></li>
+            </ul>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search here..."
+            [(ngModel)]="searchQuery"
+            (input)="onSearchChange()"
+            [style.borderRadius]="customBorderRadius"
+            [style.backgroundColor]="customBg"
+          />
+          
+          <button
+          style="background-color: #febd69;"
+            type="button"
+            (click)="onSearchClick()"
+          >
+          <i class="fa fa-search"  aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <!-- Button to open the sidebar -->
+    <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#categorySidebar" aria-controls="categorySidebar"><i class="fa fa-bars" aria-hidden="true"> ALL</i></button>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  
+  <!-- Side Menu for Categories -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="categorySidebar" aria-labelledby="categorySidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="categorySidebarLabel">Categories</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-group">
+        <li class="list-group-item"><a href="#">Electronics</a></li>
+        <li class="list-group-item"><a href="#">Books</a></li>
+        <li class="list-group-item"><a href="#">Fashion</a></li>
+        <li class="list-group-item"><a href="#">Home & Kitchen</a></li>
+        <li class="list-group-item"><a href="#">Beauty & Health</a></li>
+        <li class="list-group-item"><a href="#">Sports & Outdoors</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  
